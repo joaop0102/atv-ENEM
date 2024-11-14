@@ -195,7 +195,7 @@ footer a:hover {
 
 @keyframes colorFlash {
     0% { background-color: #f8f9fa; }
-    50% { background-color: #ffeb3b; }
+    50% { background-color: #3bfff58a; }
     100% { background-color: #f8f9fa; }
 }
 
@@ -286,4 +286,17 @@ p {
     opacity: 0;
     animation: fadeInUp 1s ease forwards;
     animation-delay: 0.2s;
+}
+
+.card-video{
+    display: flex; 
+    gap: 10px; 
+    justify-content: space-between;
+}
+
+.video{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    animation: zoomIn 1.8s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
