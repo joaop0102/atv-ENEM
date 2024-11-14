@@ -159,10 +159,7 @@ footer a:hover {
     }
 }
 
-
-/* style.css */
-
-/* Animação de Fade-in para o Hero Section */
+/* Animação de Fade-in */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -288,15 +285,29 @@ p {
     animation-delay: 0.2s;
 }
 
-.card-video{
-    display: flex; 
-    gap: 10px; 
-    justify-content: space-between;
+.card-video {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
-.video{
+.video {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 16 / 9;
     border-radius: 10px;
     margin-bottom: 10px;
     animation: zoomIn 1.8s ease-in-out;
     transition: transform 0.5s ease-in-out;
+}
+
+
+@media (min-width: 768px) {
+    .card-video {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
